@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
   const handleLogin = () => {
     axios
-      .post("https://city-frontend-lovat.vercel.app:5000/login", {
+      .post("https://city-frontend-lovat.vercel.app/login", {
         email: email,
         password: password,
       })
