@@ -10,7 +10,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const handleSignup = async () => {
     await axios
-      .post("https://city-server-sable.vercel.app:5000/signup", {
+      .post("https://city-frontend-lovat.vercel.app:5000/signup", {
         username: Name,
         email: email,
         password: password,

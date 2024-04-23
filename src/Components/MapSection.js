@@ -45,7 +45,7 @@ const MapSection = ({ reference }) => {
     console.log("Click event");
     setcityname(cityName);
     try {
-      const response = await fetch("https://city-server-sable.vercel.app:5000/get-image");
+      const response = await fetch("https://city-frontend-lovat.vercel.app:5000/get-image");
       const data = await response.json();
       if (data.status === "ok") {
         setImages(data.data);
